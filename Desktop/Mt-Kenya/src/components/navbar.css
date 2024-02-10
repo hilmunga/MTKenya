@@ -1,0 +1,95 @@
+
+.example-class {
+    /* Replace this with the path to your image file */
+    background-image: url("/src/images/supplychain_img1.jpg");
+    /* Other background properties */
+    background-size: cover;
+    background-position: center;
+    /* Other styles */
+    font-family: sans-serif;
+    color: #333;
+  }
+/* Styling for the navbar container */
+.navbar {
+    /*display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #333;
+    */
+    background-color: #2C3E50;  /* Dark blue shade */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20;
+    font-family: sans-serif, Arial, Helvetica, sans-serif;
+}
+
+/* Logo styling */
+.navbar-logo {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+/* Navigation link styling */
+.navbar-links {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+    color: #ff4500;
+}
+.navbar a{
+    text-decoration: none;
+    color:#ECF0F1;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+.navbar a:hover {
+    color:#E74C3C;
+}
+/* For devices with max-width of 768px */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;   /* Stack items vertically */
+        height: auto;             /* Auto adjust height */
+    }
+
+    .navbar a {
+        margin: 5px 0;           /* Adjust link margins */
+    }
+}
+.navbar-logo {
+    font-size: 1.8rem;       /* Bigger font size for the logo */
+    font-weight: bold;       /* Bold text for emphasis */
+    color: #E67E22;         /* Orange shade to make it stand out */
+}
+/* Styles for screen widths up to 600px */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;   /* Items stacked vertically */
+    }
+}
+/*container*/ .navbar{
+    display: flex;
+    flex-wrap: wrap;  /* Allows items to wrap to next line if space is constrained */
+}
+
+.item {
+    flex: 1;  /* Allows items to grow and shrink */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  /* 
+    
+These examples show containers adjusting their children's positioning based on available spaceResponsive columns */
+}
